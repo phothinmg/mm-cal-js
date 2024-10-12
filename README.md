@@ -55,7 +55,7 @@ console.log(isSabbath(new Date()));
 
 ### Checking the public holidays for a date
 
-![API Docs](https://doxdox.org/Beautiful-Days/mm-cal-js#src/mm-calendar/holidays.ts)
+[API Docs](https://doxdox.org/Beautiful-Days/mm-cal-js#src/mm-calendar/holidays.ts)
 
 ```ts
 import { publicHolidays } from "mm-cal-js";
