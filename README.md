@@ -2,11 +2,11 @@
 
 > This repository is the TypeScript fork of [chanmratekoko/mmcalendar](https://github.com/chanmratekoko/mmcalendar) and the opinionated TypeScript implementation of the original [yan9a/mmcal](https://github.com/yan9a/mmcal), and based on this very awesome article by **yan9a/mmcal's** author: [Algorithm, Program and Calculation of Myanmar Calendar](https://cool-emerald.blogspot.com/2013/06/algorithm-program-and-calculation-of.html).
 
-##  🚧 🚧 Only certain features are available for now 🚧 🚧
+## 🚧 🚧 Only certain features are available for now 🚧 🚧
+
 - [x] western date to Myanmar date
 
 - [x] Sabbath day calculation
-
 
 ## Installation
 
@@ -53,11 +53,23 @@ console.log(isSabbath(new Date()));
 // output: [1=Sabbath, 2=Sabbath Eve, 0=else]
 ```
 
+### Checking the public holidays for a date
+
+![API Docs](https://doxdox.org/Beautiful-Days/mm-cal-js#src/mm-calendar/holidays.ts)
+
+```ts
+import { publicHolidays } from "mm-cal-js";
+
+console.log(publicHolidays(new Date(2024, 9, 17)));
+// output: Array of holidays
+//[ 'End of Buddhist Lent' ]
+```
+
 ## Documentation
+
 The code is very well-documented. I suggest you explore into the source code. You can also read more about the implementation details [here](https://cool-emerald.blogspot.com/2013/06/algorithm-program-and-calculation-of.html).
 
 Essentially, the Gregorian date is converted into Julian day number, and it's converted into Myanmar date.
-
 
 ## Motivation
 
